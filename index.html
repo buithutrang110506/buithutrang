@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thu Trang Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/* HERO */
+.hero {
+    background: #fff0f4; 
+    color: #5a4e4e;
+    padding: 100px 20px;
+}
+
+.hero .hero-container {
+    display: flex;
+    align-items: center;       /* căn giữa dọc */
+    justify-content: center;   /* tổng thể chữ + avatar căn giữa ngang */
+    flex-wrap: wrap;           /* responsive: xếp dọc khi nhỏ */
+    gap: 300px;                /* giữ khoảng cách hiện tại giữa chữ và avatar */
+}
+
+.hero-text {
+    text-align: left;          /* chữ vẫn căn trái bên trong box của nó */
+}
+
+.hero h1 {
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.avatar {
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #f5c1cd;
+    margin-bottom: 25px;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 0;
+}
+
+.section-white { background: #ffffff; }
+.section-pink { background: #fff0f4; }
+
+.section-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c43c6b;
+    font-size: 2.4rem;
+}
+
+.divider {
+    width: 70px;
+    height: 5px;
+    background: linear-gradient(to right, #f5c1cd, #f9d6e1);
+    margin: 15px auto 50px;
+    border-radius: 5px;
+}
+
+/* CARD */
+.card {
+    border-radius: 15px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h5 {
+    font-size: 28px; 
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c43c6b;
+}
+
+.card p, .card ul {
+    font-size: 1.2rem; 
+    line-height: 1.9;
+    text-align: left;
+}
+
+/* ICONS */
+.icon {
+    font-size: 65px; 
+    margin-bottom: 20px;
+}
+
+/* pastel colors for icons */
+.icon-peach { color: #e87575; }
+.icon-mint { color: #5fbba7; }
+.icon-lavender { color: #8f7fe8; }
+.icon-pink { color: #e873a3; }
+
+/* SKILLS */
+.skill-box {
+    padding: 25px;
+}
+
+.skill-box p {
+    margin: 15px 0 5px;
+    font-weight: 600;
+    font-size: 1.4rem; 
+}
+
+.skill-box small {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* KEYWORD HIGHLIGHT */
+strong {
+    color: #c43c6b;
+    font-weight: 700;
+}
+
+/* CONTACT */
+.contact {
+    background: #ffffff;
+    color: #5a4e4e;
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 1.2rem;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    background: #fff0f4;
+    color: #5a4e4e;
+}
+
+/* Responsive: khi màn hình nhỏ */
+@media (max-width: 767px) {
+    .hero .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px; /* khoảng cách nhỏ hơn trên mobile */
+    }
+
+    .hero-text {
+        margin-bottom: 0;
+        text-align: center; /* chữ căn giữa khi xếp dọc */
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero section-pink">
+    <div class="container hero-container">
+        <!-- Text Left -->
+        <div class="hero-text">
+            <h1>Bui Thu Trang</h1>
+            <p>International Economics Student | FTU</p>
+        </div>
+        <!-- Avatar Right -->
+        <div class="hero-avatar">
+            <img src="avatar.jpg" class="avatar" alt="Thu Trang Avatar">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section-white">
+    <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+        <div class="divider"></div>
+        <p class="text-center col-md-10 mx-auto" style="font-size:1.4rem; line-height:2;">
+            I am <strong>Bui Thu Trang</strong>, a second-year student majoring in <strong>International Economics</strong> at <strong>FTU</strong>. 
+            This portfolio showcases my journey in <strong>Database</strong> and <strong>data management</strong>, as well as my skills in <strong>Excel</strong>, <strong>Microsoft Access</strong>, and <strong>quantitative analysis</strong>. 
+        </p>
+        <p class="text-center col-md-10 mx-auto" style="font-size:1.4rem; line-height:2;">
+            I enjoy combining <strong>logical thinking</strong> with creativity to build meaningful projects and solutions. 
+            I am passionate about <strong>learning new technologies</strong>, <strong>data visualization</strong>, and applying <strong>quantitative methods</strong> to solve real-life problems.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section section-pink">
+    <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="divider"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card text-center">
+                    <h5>Foreign Trade University (FTU)</h5>
+                    <p>
+                        <strong>Major:</strong> International Economics<br>
+                        <strong>Year:</strong> Second-year student<br>
+                        <strong>Relevant Coursework:</strong> Quantitative Methods, Basic Informatics
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section-white">
+    <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Projects</h2>
+        <div class="divider"></div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="icon icon-peach"><i class="fa-solid fa-database"></i></div>
+                    <h5>Student Database Management System</h5>
+                    <ul>
+                        <li>Designed database model to manage student <strong>data</strong> (ID, Name, Class, GPA)</li>
+                        <li>Practiced <strong>Microsoft Access</strong> for data handling</li>
+                        <li>Ensured <strong>data consistency</strong> and relational structure</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="icon icon-mint"><i class="fa-solid fa-chart-column"></i></div>
+                    <h5>Mini Data Analysis Assignment</h5>
+                    <ul>
+                        <li>Collected and organized sample <strong>academic data</strong></li>
+                        <li>Performed <strong>data visualization</strong> using Excel</li>
+                        <li>Interpreted datasets with <strong>quantitative methods</strong></li>
+                        <li>Produced clear charts and tables for presentation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="icon icon-lavender"><i class="fa-solid fa-code"></i></div>
+                    <h5>Database Design Practice</h5>
+                    <ul>
+                        <li>Designing <strong>database schemas</strong> and relationships</li>
+                        <li>Practicing student management and sales tracking models</li>
+                        <li>Building simple real-life data models</li>
+                        <li>Exploring relational integrity and keys</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-pink">
+    <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-lightbulb"></i> Skills</h2>
+        <div class="divider"></div>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="skill-box">
+                    <div class="icon icon-peach"><i class="fa-solid fa-laptop"></i></div>
+                    <p>Microsoft Office</p>
+                    <small>Word, Excel, PowerPoint</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-box">
+                    <div class="icon icon-mint"><i class="fa-solid fa-chart-line"></i></div>
+                    <p>Data Handling</p>
+                    <small>Basic processing & analysis</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-box">
+                    <div class="icon icon-lavender"><i class="fa-solid fa-book"></i></div>
+                    <p>Research Skills</p>
+                    <small>Academic research</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-box">
+                    <div class="icon icon-pink"><i class="fa-solid fa-brain"></i></div>
+                    <p>Logical Thinking</p>
+                    <small>Quantitative mindset</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+    <p>Email: buithutrang110506@gmail.com</p>
+</section>
+
+<footer>
+    © 2026 Bui Thu Trang
+</footer>
+
+</body>
+</html>
